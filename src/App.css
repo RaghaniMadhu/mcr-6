@@ -123,6 +123,10 @@
   color: var(--grey-color);
 }
 
+.white-color {
+  color: var(--white-color);
+}
+
 .padding-point2-point5 {
   padding: 0.2rem 0.5rem;
 }

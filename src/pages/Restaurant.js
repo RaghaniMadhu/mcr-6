@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { DataContext } from "../contexts/DataContext";
 import ReviewCard from "../components/ReviewCard";
+import AddReviewCard from "../components/AddReviewCard";
 
 function Restaurant() {
   const { restaurantId } = useParams();
@@ -46,9 +47,7 @@ function Restaurant() {
               </p>
               <p className="gray-color margin-block-0">{`Average Rating: ${averageRatingRoundedOff}`}</p>
             </div>
-            <div className="flex-column-center-center">
-              <button className="primary-button">Add Review</button>
-            </div>
+            <AddReviewCard restaurantId={restaurantId} />
           </div>
           <hr />
           {/* Review Div */}
